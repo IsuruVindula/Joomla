@@ -1,0 +1,37 @@
+------------------------------------------------------------------------
+- Changelog - 
+------------------------------------------------------------------------
+
+3.1.0 Stable Release [24-November-2018]
+************************************************************************
+- Updated Clone Installer to Joomla 3.9
+- Update other included extensions
+- Minor Bug Fixes
+
+ 3.0.2 Stable Release [11-May-2015]
+************************************************************************
+1 - Updated Clone Installer to Joomla 3.4.1
+2 - Added custom.css file to CSS Folder
+3 - Updated IceMegaMenu to Latest version
+4 - Added iPad Fix for LandScape View
+5 - Restyled a few sections
+6 - Updated Template Installer with above fixes
+
+
+
+
+ 3.0.1 Stable Release [25-February-2014]
+************************************************************************  
+ 1 - Updated Clone Installer package to Joomla 3.2.2
+ 2 - Fixed various Jquery javascript conflicts
+ 3 - Updated IceTheme Extensions
+ 4 - [#43] Tags article styling. New in joomla 3.2
+ 5 - Fixed various bugs with IceMegamenu, works fine on ipad as well
+
+
+	
+
+
+
+ 3.0.0 Stable Release [01-NOvember-2013]
+************************************************************************  

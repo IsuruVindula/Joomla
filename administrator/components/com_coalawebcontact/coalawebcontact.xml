@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.6" method="upgrade">
+    <name>COM_COALAWEBCONTACT</name>
+    <creationDate>2018-12-12</creationDate>
+    <author>Steven Palmer</author>
+    <authorEmail>support@coalaweb.com</authorEmail>
+    <authorUrl>https://coalaweb.com/</authorUrl>
+    <copyright>Copyright (c) 2018 Steven Palmer All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>1.1.5</version>
+    <description>COM_COALAWEBCONTACT_DESC</description>
+ 
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install/mysql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install/mysql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update> <!-- Runs on update; New in 1.6 -->
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <media destination="coalawebcontact" folder="media/coalawebcontact">
+        <folder>modules</folder>
+		<file>index.html</file>
+		<folder>plugins</folder>
+		<folder>components</folder>
+		<folder>resources</folder>
+    </media>
+
+    <administration>
+        <menu>COM_COALAWEBCONTACT</menu>
+        <files folder="administrator/components/com_coalawebcontact">
+            <folder>sql</folder>
+			<file>access.xml</file>
+			<folder>tables</folder>
+			<folder>helpers</folder>
+			<folder>assets</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<file>index.html</file>
+			<file>coalawebcontact.php</file>
+			<file>version.php</file>
+			<folder>language</folder>
+			<file>config.xml</file>
+			<file>controller.php</file>
+			<folder>models</folder>
+        </files>
+
+        <languages folder="administrator/components/com_coalawebcontact/language">
+            <language tag="en-GB">en-GB/en-GB.com_coalawebcontact.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_coalawebcontact.sys.ini</language>
+        </languages>
+    </administration>
+ 
+    <!-- Update Server -->
+    <updateservers>
+         <server type="extension" priority="1" name="CoalaWeb Contact Update">http://cdn.coalaweb.com/updates/cw-contact-core.xml</server>
+    </updateservers>
+        
+    <!-- Installation / Uninstallation Script File -->
+    <scriptfile>script.com_coalawebcontact.php</scriptfile>
+        
+</extension>

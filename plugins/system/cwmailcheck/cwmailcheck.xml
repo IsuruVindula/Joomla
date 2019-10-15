@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="system" method="upgrade">
+    <name>PLG_CWMAILCHECK</name>
+    <creationDate>2018-12-12</creationDate>
+    <author>Steven Palmer</author>
+    <authorEmail>support@coalaweb.com</authorEmail>
+    <authorUrl>https://coalaweb.com/</authorUrl>
+    <copyright>Copyright (c) 2018 Steven Palmer All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>1.1.5</version>
+    <description>PLG_CWMAILCHECK_DESCRIPTION</description>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_cwmailcheck.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_cwmailcheck.ini</language>
+    </languages>
+
+    <files>
+        <folder>assets</folder>
+		<file>index.html</file>
+		<folder>language</folder>
+		<file plugin="cwmailcheck">cwmailcheck.php</file>
+    </files>
+    
+    <!-- HELP FILE -->
+    <help url="PLG_CWMAILCHECK_HELP_URL" />
+    
+    <config>
+        <fields 
+            name="params" 
+            addfieldpath="plugins/system/cwgears/fields">
+            
+            <fieldset 
+                name="GENERAL"
+                label="PLG_CWMAILCHECK_SETTINGS" >
+                
+                <field 
+                    name="css_import" 
+                    type="css"/>
+                
+                <field 
+                    name="basic_info"
+                    type="note"
+                    class="alert alert-info"
+                    close="true"
+                    default=""
+                    description="PLG_CWMAILCHECK_SETTINGS_MESSAGE"/>
+        
+            </fieldset>
+            
+            <fieldset 
+                name="VERSION"
+                label="PLG_CWMAILCHECK_TITLE_VERSION">
+                
+                <field 
+                    name="version_info"
+                    type="version"
+                    label="com_coalawebcontact"/>
+                
+            </fieldset>
+            
+        </fields>
+    </config>
+</extension>
